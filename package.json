@@ -2,16 +2,16 @@
   "name": "react-todo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "webpack serve --config webpack.config.js --env env=development",
     "build": "webpack --config webpack.config.js --env env=production",
-    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx,json}\" --fix",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "format:check": "prettier --check \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "prepare": "husky install",
-    "test": "npx jest",
-    "tsc:check": "tsc --noEmit"
+    "tsc:check": "tsc --noEmit",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
